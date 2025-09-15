@@ -59,10 +59,18 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionIndex()
-    {
-        return $this->render('index');
-    }
+    public function actionIndex($page = 1)
+{
+    // Buscar últimas notícias
+    $newsData = \app\models\NewsService::latest($page);
+
+    return $this->render('index', [
+        'news' => $newsData['articles'] ?? [],
+        'currentPage' => $newsData['currentPage'] ?? 1,
+        'totalPages' => $newsData['totalPages'] ?? 1,
+        'query' => '', // campo de pesquisa vazio por padrão
+    ]);
+}
 
     /**
      * Login action.

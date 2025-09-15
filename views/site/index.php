@@ -1,53 +1,61 @@
 <?php
+use yii\helpers\Html;
+use yii\helpers\Url;
 
-/** @var yii\web\View $this */
+/* @var $news array */
+/* @var $currentPage int */
+/* @var $totalPages int */
+/* @var $query string */
 
-$this->title = 'My Yii Application';
+$this->title = 'Últimas Notícias';
 ?>
-<div class="site-index">
 
-    <div class="jumbotron text-center bg-transparent mt-5 mb-5">
-        <h1 class="display-4">Congratulations!</h1>
+<div class="container mt-4">
+    <h1><?= Html::encode($this->title) ?></h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+    <!-- Caixa de pesquisa -->
+    <?= Html::beginForm(['news/search'], 'get', ['class' => 'mb-4']) ?>
+        <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="Pesquisar notícias..." value="<?= Html::encode($query) ?>">
+            <button class="btn btn-primary" type="submit">Buscar</button>
+        </div>
+    <?= Html::endForm() ?>
 
-        <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
+    <!-- Últimas notícias -->
+    <?php if (empty($news)): ?>
+        <p>Nenhuma notícia encontrada.</p>
+    <?php else: ?>
         <div class="row">
-            <div class="col-lg-4 mb-3">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4 mb-3">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
+            <?php foreach ($news as $item): ?>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100">
+                        <?php if (!empty($item['thumbnail'])): ?>
+                            <img src="<?= Html::encode($item['thumbnail']) ?>" class="card-img-top" alt="<?= Html::encode($item['title']) ?>">
+                        <?php endif; ?>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="<?= Html::encode($item['url']) ?>" target="_blank"><?= Html::encode($item['title']) ?></a>
+                            </h5>
+                            <p class="card-text"><?= Html::encode($item['description']) ?></p>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
         </div>
 
-    </div>
+        <!-- Paginação -->
+        <div class="mt-4 d-flex justify-content-between">
+            <?php if ($currentPage > 1): ?>
+                <a class="btn btn-secondary" href="<?= Url::to(['site/home', 'page' => $currentPage - 1]) ?>">« Anterior</a>
+            <?php else: ?>
+                <span></span>
+            <?php endif; ?>
+
+            <?php if ($currentPage < $totalPages): ?>
+                <a class="btn btn-secondary" href="<?= Url::to(['site/home', 'page' => $currentPage + 1]) ?>">Próximo »</a>
+            <?php else: ?>
+                <span></span>
+            <?php endif; ?>
+        </div>
+    <?php endif; ?>
 </div>
