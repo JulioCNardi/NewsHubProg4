@@ -4865,3 +4865,82 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1758235289.9461
     'REQUEST_TIME' => 1758235289
 ]
+2025-09-18 23:01:30 [::1][-][fuf13cc539951bohfks3l83l6e][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(https://content.guardianapis.com/search?q=Brazil&amp;page=6&amp;page-size=10&amp;api-key=YOUR_GUARDIAN_API_KEY&amp;show-fields=thumbnail,headline,trailText,short-url): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in C:\laragon\www\NewsHubProg4\models\NewsService.php:67
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', 'C:\\laragon\\www\\...', 67)
+#1 C:\laragon\www\NewsHubProg4\models\NewsService.php(67): file_get_contents('https://content...')
+#2 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(64): app\models\NewsService::latest('6', 'Brazil')
+#3 [internal function]: app\controllers\SiteController->actionIndex('6', 'Brazil')
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('index', Array)
+#7 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\laragon\www\NewsHubProg4\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2025-09-18 23:01:29 [::1][-][fuf13cc539951bohfks3l83l6e][info][application] $_GET = [
+    'r' => 'site/index'
+    'page' => '6'
+    'q' => ''
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'fuf13cc539951bohfks3l83l6e'
+    '_csrf' => '745efa1e4f292c278128d786843830da9f2be0afc97a3b445e1e272ab9b82566a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hoVTJJmxFpaUJDCRwKPqIQVClMDXF_8z\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0 (Edition std-2)'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=site%2Findex&page=5&q='
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,ko;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=fuf13cc539951bohfks3l83l6e; _csrf=745efa1e4f292c278128d786843830da9f2be0afc97a3b445e1e272ab9b82566a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hoVTJJmxFpaUJDCRwKPqIQVClMDXF_8z%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\laragon\\bin\\php\\php-8.1.10-Win32-vs16-x64;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Julio\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Julio\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '51252'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex&page=6&q='
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?r=site%2Findex&page=6&q='
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758236489.0618
+    'REQUEST_TIME' => 1758236489
+]

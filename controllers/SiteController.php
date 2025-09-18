@@ -59,18 +59,18 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionIndex($page = 1)
-{
-    // Buscar últimas notícias
-    $newsData = \app\models\NewsService::latest($page);
+    public function actionIndex($page = 1, $country = 'Brazil')
+    {
+        $newsData = \app\models\NewsService::latest($page, $country);
 
-    return $this->render('index', [
-        'news' => $newsData['articles'] ?? [],
-        'currentPage' => $newsData['currentPage'] ?? 1,
-        'totalPages' => $newsData['totalPages'] ?? 1,
-        'query' => '', // campo de pesquisa vazio por padrão
-    ]);
-}
+        return $this->render('index', [
+            'news' => $newsData['articles'] ?? [],
+            'currentPage' => $newsData['currentPage'] ?? 1,
+            'totalPages' => $newsData['totalPages'] ?? 1,
+            'query' => '',
+            'country' => $country,
+        ]);
+    }
 
     /**
      * Login action.

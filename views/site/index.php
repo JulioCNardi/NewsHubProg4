@@ -21,6 +21,19 @@ $this->title = 'Últimas Notícias';
         </div>
     <?= Html::endForm() ?>
 
+    <!-- Dropdown -->
+    <form method="get" class="mb-3" id="country-form" action="<?= Url::to(['site/index']) ?>">
+        <label for="country-select">Selecione o país:</label>
+        <select name="country" id="country-select" class="form-select" style="width:auto;display:inline-block;" onchange="document.getElementById('country-form').submit();">
+            <option value="Brazil" <?= $country === 'Brazil' ? 'selected' : '' ?>>Brasil</option>
+            <option value="Argentina" <?= $country === 'Argentina' ? 'selected' : '' ?>>Argentina</option>
+            <option value="United States" <?= $country === 'United States' ? 'selected' : '' ?>>Estados Unidos</option>
+            <option value="France" <?= $country === 'France' ? 'selected' : '' ?>>França</option>
+            <option value="Germany" <?= $country === 'Germany' ? 'selected' : '' ?>>Alemanha</option>
+            <!-- Adicione mais países conforme necessário -->
+        </select>
+    </form>
+
     <!-- Últimas notícias -->
     <?php if (empty($news)): ?>
         <p>Nenhuma notícia encontrada.</p>
