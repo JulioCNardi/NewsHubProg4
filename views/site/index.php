@@ -46,13 +46,13 @@ $this->title = 'Últimas Notícias';
         <!-- Paginação -->
         <div class="mt-4 d-flex justify-content-between">
             <?php if ($currentPage > 1): ?>
-                <a class="btn btn-secondary" href="<?= Url::to(['site/home', 'page' => $currentPage - 1]) ?>">« Anterior</a>
+                <a class="btn btn-secondary" href="<?= Url::to(['site/index', 'page' => $currentPage - 1, 'q' => $query]) ?>">« Anterior</a>
             <?php else: ?>
                 <span></span>
             <?php endif; ?>
 
             <?php if ($currentPage < $totalPages): ?>
-                <a class="btn btn-secondary" href="<?= Url::to(['site/home', 'page' => $currentPage + 1]) ?>">Próximo »</a>
+                <a class="btn btn-secondary" href="<?= Url::to(['site/index', 'page' => $currentPage + 1, 'q' => $query]) ?>">Próximo »</a>
             <?php else: ?>
                 <span></span>
             <?php endif; ?>
