@@ -6,7 +6,10 @@ use Yii;
 
 class NewsService
 {
-    private static $apiKey = "46618e1b-3ea4-4481-9950-95dba05cae34";
+    private static function getApiKey()
+    {
+        return getenv('API_KEY');
+    }
 
     /**
      * Busca notícias por palavra-chave
@@ -16,10 +19,15 @@ class NewsService
      * @param int $pageSize
      * @return array
      */
-    public static function search($query, $page = 1, $pageSize = 10)
+    public static function search($query, $page = 1, $pageSize = 12)
     {
-        $url = "https://content.guardianapis.com/search?q=" . urlencode($query) .
-               "&show-fields=thumbnail,trailText,webUrl&page={$page}&page-size={$pageSize}&api-key=" . self::$apiKey;
+        $apiKey = trim(getenv('API_KEY')); // garante que não tenha espaços
+        $query = urlencode($query);
+
+        $url = "https://content.guardianapis.com/search?q={$query}"
+             . "&page={$page}&page-size={$pageSize}"
+             . "&api-key=" . urlencode($apiKey)
+             . "&show-fields=thumbnail,trailText,webUrl";
 
         $response = @file_get_contents($url);
         if ($response === false) {
@@ -53,28 +61,35 @@ class NewsService
      * Busca últimas notícias automaticamente
      *
      * @param int $page
-     * @param int $pageSize
+     * @param string $country
      * @return array
      */
     public static function latest($page = 1, $country = 'Brazil')
     {
-        $apiKey = '46618e1b-3ea4-4481-9950-95dba05cae34';
-        $pageSize = 10;
+        $apiKey = trim(getenv('API_KEY')); // garante que não tenha espaços
+        $pageSize = 12;
         $query = urlencode($country);
 
-        $url = "https://content.guardianapis.com/search?q={$query}&page={$page}&page-size={$pageSize}&api-key={$apiKey}&show-fields=thumbnail,headline,trailText,short-url";
+        $url = "https://content.guardianapis.com/search?q={$query}"
+             . "&page={$page}&page-size={$pageSize}"
+             . "&api-key=" . urlencode($apiKey)
+             . "&show-fields=thumbnail,headline,trailText,short-url";
 
-        $response = file_get_contents($url);
+        $response = @file_get_contents($url);
+        if ($response === false) {
+            return ['error' => 'Falha ao conectar à API'];
+        }
+
         $data = json_decode($response, true);
 
         $articles = [];
         if (isset($data['response']['results'])) {
             foreach ($data['response']['results'] as $item) {
                 $articles[] = [
-                    'title' => $item['webTitle'],
+                    'title' => $item['webTitle'] ?? 'Sem título',
                     'description' => $item['fields']['trailText'] ?? '',
-                    'url' => $item['webUrl'],
-                    'thumbnail' => $item['fields']['thumbnail'] ?? '', // <-- use 'thumbnail'
+                    'url' => $item['webUrl'] ?? '#',
+                    'thumbnail' => $item['fields']['thumbnail'] ?? '',
                 ];
             }
         }
@@ -86,3 +101,4 @@ class NewsService
         ];
     }
 }
+ 

@@ -4944,3 +4944,1283 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1758236489.0618
     'REQUEST_TIME' => 1758236489
 ]
+2025-09-26 16:39:23 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Constant expression contains invalid operations in C:\laragon\www\NewsHubProg4\models\NewsService.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2025-09-26 16:39:20 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '64387'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758904759.137
+    'REQUEST_TIME' => 1758904759
+]
+2025-09-26 16:40:29 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Constant expression contains invalid operations in C:\laragon\www\NewsHubProg4\models\NewsService.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2025-09-26 16:40:29 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '65159'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758904829.1043
+    'REQUEST_TIME' => 1758904829
+]
+2025-09-26 16:40:30 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Constant expression contains invalid operations in C:\laragon\www\NewsHubProg4\models\NewsService.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2025-09-26 16:40:30 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '51809'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758904830.7154
+    'REQUEST_TIME' => 1758904830
+]
+2025-09-26 16:40:31 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Constant expression contains invalid operations in C:\laragon\www\NewsHubProg4\models\NewsService.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2025-09-26 16:40:31 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '58630'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758904831.1348
+    'REQUEST_TIME' => 1758904831
+]
+2025-09-26 16:40:31 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Constant expression contains invalid operations in C:\laragon\www\NewsHubProg4\models\NewsService.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2025-09-26 16:40:31 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '63659'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758904831.2872
+    'REQUEST_TIME' => 1758904831
+]
+2025-09-26 16:41:06 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected single-quoted string "API_KEY", expecting "," or ";" in C:\laragon\www\NewsHubProg4\models\NewsService.php:9
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(64): yii\BaseYii::autoload('app\\models\\News...')
+#1 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\laragon\www\NewsHubProg4\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2025-09-26 16:41:06 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '63035'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758904866.5703
+    'REQUEST_TIME' => 1758904866
+]
+2025-09-26 16:41:34 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected double-quoted string "API_KEY", expecting "," or ";" in C:\laragon\www\NewsHubProg4\models\NewsService.php:9
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(64): yii\BaseYii::autoload('app\\models\\News...')
+#1 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\laragon\www\NewsHubProg4\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2025-09-26 16:41:34 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '55771'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758904894.1168
+    'REQUEST_TIME' => 1758904894
+]
+2025-09-26 16:41:59 [::1][-][-][error][yii\base\ErrorException:64] yii\base\ErrorException: Constant expression contains invalid operations in C:\laragon\www\NewsHubProg4\models\NewsService.php:9
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2025-09-26 16:41:59 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '65035'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758904919.6338
+    'REQUEST_TIME' => 1758904919
+]
+2025-09-26 16:43:01 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected variable "$apiKey", expecting "function" or "const" in C:\laragon\www\NewsHubProg4\models\NewsService.php:9
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(64): yii\BaseYii::autoload('app\\models\\News...')
+#1 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\laragon\www\NewsHubProg4\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2025-09-26 16:43:01 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '64137'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758904981.4699
+    'REQUEST_TIME' => 1758904981
+]
+2025-09-26 16:43:50 [::1][-][-][error][ParseError] ParseError: syntax error, unexpected variable "$apiKey", expecting "function" or "const" in C:\laragon\www\NewsHubProg4\models\NewsService.php:11
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(64): yii\BaseYii::autoload('app\\models\\News...')
+#1 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\laragon\www\NewsHubProg4\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2025-09-26 16:43:50 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '54777'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758905030.0894
+    'REQUEST_TIME' => 1758905030
+]
+2025-09-26 16:48:38 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(https://content.guardianapis.com/search?q=Brazil&amp;page=1&amp;page-size=12&amp;api-key=&amp;show-fields=thumbnail,headline,trailText,short-url): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in C:\laragon\www\NewsHubProg4\models\NewsService.php:70
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\NewsHubProg4\models\NewsService.php(70): file_get_contents('https://content...')
+#2 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(64): app\models\NewsService::latest(1, 'Brazil')
+#3 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#7 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\laragon\www\NewsHubProg4\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2025-09-26 16:48:37 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '63079'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758905317.1772
+    'REQUEST_TIME' => 1758905317
+]
+2025-09-26 16:49:21 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: require(C:\laragon\www\NewsHubProg4\views\site/../config/env.php): Failed to open stream: No such file or directory in C:\laragon\www\NewsHubProg4\views\site\index.php:4
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\views\site\index.php(4): yii\base\ErrorHandler->handleError(2, 'require(C:\\lara...', 'C:\\laragon\\www\\...', 4)
+#1 C:\laragon\www\NewsHubProg4\views\site\index.php(4): require()
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, Object(app\controllers\SiteController))
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(413): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#6 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(71): yii\base\Controller->render('index', Array)
+#7 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#9 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#11 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#12 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\NewsHubProg4\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2025-09-26 16:49:20 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '56436'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758905360.1248
+    'REQUEST_TIME' => 1758905360
+]
+2025-09-26 16:49:56 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: require(C:\laragon\www\NewsHubProg4\views\site/../config/env.php): Failed to open stream: No such file or directory in C:\laragon\www\NewsHubProg4\views\site\index.php:4
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\views\site\index.php(4): yii\base\ErrorHandler->handleError(2, 'require(C:\\lara...', 'C:\\laragon\\www\\...', 4)
+#1 C:\laragon\www\NewsHubProg4\views\site\index.php(4): require()
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, Object(app\controllers\SiteController))
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(413): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#6 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(71): yii\base\Controller->render('index', Array)
+#7 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#9 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#11 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#12 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\NewsHubProg4\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2025-09-26 16:49:55 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '64747'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758905395.6502
+    'REQUEST_TIME' => 1758905395
+]
+2025-09-26 16:50:36 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(https://content.guardianapis.com/search?q=Brazil&amp;page=1&amp;page-size=12&amp;api-key=&amp;show-fields=thumbnail,headline,trailText,short-url): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in C:\laragon\www\NewsHubProg4\models\NewsService.php:70
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\NewsHubProg4\models\NewsService.php(70): file_get_contents('https://content...')
+#2 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(64): app\models\NewsService::latest(1, 'Brazil')
+#3 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#7 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\laragon\www\NewsHubProg4\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2025-09-26 16:50:35 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '54469'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758905435.176
+    'REQUEST_TIME' => 1758905435
+]
+2025-09-26 16:51:26 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(https://content.guardianapis.com/search?q=Brazil&amp;page=1&amp;page-size=12&amp;api-key=&amp;show-fields=thumbnail,headline,trailText,short-url): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in C:\laragon\www\NewsHubProg4\models\NewsService.php:70
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\NewsHubProg4\models\NewsService.php(70): file_get_contents('https://content...')
+#2 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(64): app\models\NewsService::latest(1, 'Brazil')
+#3 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#7 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\laragon\www\NewsHubProg4\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2025-09-26 16:51:25 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '60382'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758905485.336
+    'REQUEST_TIME' => 1758905485
+]
+2025-09-26 16:53:15 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(https://content.guardianapis.com/search?q=Brazil&amp;page=1&amp;page-size=12&amp;api-key=&amp;show-fields=thumbnail,headline,trailText,short-url): Failed to open stream: HTTP request failed! HTTP/1.1 401 Unauthorized
+ in C:\laragon\www\NewsHubProg4\models\NewsService.php:70
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\NewsHubProg4\models\NewsService.php(70): file_get_contents('https://content...')
+#2 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(64): app\models\NewsService::latest(1, 'Brazil')
+#3 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#7 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\laragon\www\NewsHubProg4\web\index.php(12): yii\base\Application->run()
+#10 {main}
+2025-09-26 16:53:14 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '63483'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758905594.391
+    'REQUEST_TIME' => 1758905594
+]
+2025-09-26 16:57:14 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(https://content.guardianapis.com/search?q=Brazil&amp;page=1&amp;page-size=12&amp;api-key= 46618e1b-3ea4-4481-9950-95dba05cae34&amp;show-fields=thumbnail,headline,trailText,short-url): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\laragon\www\NewsHubProg4\models\NewsService.php:70
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\NewsHubProg4\models\NewsService.php(70): file_get_contents('https://content...')
+#2 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(64): app\models\NewsService::latest(1, 'Brazil')
+#3 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#7 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\laragon\www\NewsHubProg4\web\index.php(14): yii\base\Application->run()
+#10 {main}
+2025-09-26 16:57:13 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '50335'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758905833.3368
+    'REQUEST_TIME' => 1758905833
+]
+2025-09-26 16:58:21 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(https://content.guardianapis.com/search?q=Brazil&amp;page=1&amp;page-size=12&amp;api-key= 46618e1b-3ea4-4481-9950-95dba05cae34&amp;show-fields=thumbnail,headline,trailText,short-url): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\laragon\www\NewsHubProg4\models\NewsService.php:70
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\NewsHubProg4\models\NewsService.php(70): file_get_contents('https://content...')
+#2 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(64): app\models\NewsService::latest(1, 'Brazil')
+#3 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#7 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#10 {main}
+2025-09-26 16:58:20 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '59721'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758905900.3012
+    'REQUEST_TIME' => 1758905900
+]
+2025-09-26 16:59:50 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: file_get_contents(https://content.guardianapis.com/search?q=Brazil&amp;page=1&amp;page-size=12&amp;api-key= 46618e1b-3ea4-4481-9950-95dba05cae34&amp;show-fields=thumbnail,headline,trailText,short-url): Failed to open stream: HTTP request failed! HTTP/1.1 400 Bad Request
+ in C:\laragon\www\NewsHubProg4\models\NewsService.php:70
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'file_get_conten...', 'C:\\laragon\\www\\...', 70)
+#1 C:\laragon\www\NewsHubProg4\models\NewsService.php(70): file_get_contents('https://content...')
+#2 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(64): app\models\NewsService::latest(1, 'Brazil')
+#3 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#7 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#10 {main}
+2025-09-26 16:59:49 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '59241'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758905989.0966
+    'REQUEST_TIME' => 1758905989
+]
+2025-09-26 17:06:47 [::1][-][mpcps767rcbk8u68100mthjcqi][error][ParseError] ParseError: syntax error, unexpected token "class", expecting "function" or "const" in C:\laragon\www\NewsHubProg4\models\NewsService.php:14
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(64): yii\BaseYii::autoload('app\\models\\News...')
+#1 [internal function]: app\controllers\SiteController->actionIndex(1, 'France')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#8 {main}
+2025-09-26 17:06:46 [::1][-][mpcps767rcbk8u68100mthjcqi][info][application] $_GET = [
+    'country' => 'France'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'mpcps767rcbk8u68100mthjcqi'
+    '_csrf' => 'dde5f38ab46bd58d53b590f53ec6743d0ac8dbacf37c188df922a1786b288d48a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"t_JYbxNA07AX3WWS_OWxuqjW21gHI0dY\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"140\", \"Not=A?Brand\";v=\"24\", \"Google Chrome\";v=\"140\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=mpcps767rcbk8u68100mthjcqi; _csrf=dde5f38ab46bd58d53b590f53ec6743d0ac8dbacf37c188df922a1786b288d48a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22t_JYbxNA07AX3WWS_OWxuqjW21gHI0dY%22%3B%7D'
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Users\\Junior\\anaconda3;C:\\Users\\Junior\\anaconda3\\Library\\mingw-w64\\bin;C:\\Users\\Junior\\anaconda3\\Library\\usr\\bin;C:\\Users\\Junior\\anaconda3\\Library\\bin;C:\\Users\\Junior\\anaconda3\\Scripts;C:\\Users\\Junior\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Junior\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Junior\\.dotnet\\tools;C:\\Users\\Junior\\AppData\\Roaming\\npm;C:\\Users\\Junior\\AppData\\Local\\Programs\\cursor\\resources\\app\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '64692'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'country=France'
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?country=France'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758906406.9435
+    'REQUEST_TIME' => 1758906406
+]
