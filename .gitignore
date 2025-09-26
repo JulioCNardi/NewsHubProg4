@@ -1,0 +1,7 @@
+# Ignorar o arquivo com a chave secreta
+.env
+
+# Ignorar cache do Yii
+/runtime/*
+/vendor/*
+/web/assets/*
