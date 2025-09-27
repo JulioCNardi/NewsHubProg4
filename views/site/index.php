@@ -21,18 +21,34 @@ $this->title = 'Últimas Notícias';
         </div>
     <?= Html::endForm() ?>
 
-    <!-- Dropdown -->
-    <form method="get" class="mb-3" id="country-form" action="<?= Url::to(['site/index']) ?>">
-        <label for="country-select">Selecione o país:</label>
-        <select name="country" id="country-select" class="form-select" style="width:auto;display:inline-block;" onchange="document.getElementById('country-form').submit();">
-            <option value="Brazil" <?= $country === 'Brazil' ? 'selected' : '' ?>>Brasil</option>
-            <option value="Argentina" <?= $country === 'Argentina' ? 'selected' : '' ?>>Argentina</option>
-            <option value="United States" <?= $country === 'United States' ? 'selected' : '' ?>>Estados Unidos</option>
-            <option value="France" <?= $country === 'France' ? 'selected' : '' ?>>França</option>
-            <option value="Germany" <?= $country === 'Germany' ? 'selected' : '' ?>>Alemanha</option>
-            <!-- Adicione mais países conforme necessário -->
-        </select>
-    </form>
+    <!-- Filtros -->
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <form method="get" id="country-form" action="<?= Url::to(['site/index']) ?>">
+                <input type="hidden" name="category" value="<?= Html::encode($category) ?>">
+                <label for="country-select">Selecione o país:</label>
+                <select name="country" id="country-select" class="form-select" style="width:auto;display:inline-block;" onchange="document.getElementById('country-form').submit();">
+                    <option value="Brazil" <?= $country === 'Brazil' ? 'selected' : '' ?>>Brasil</option>
+                    <option value="Argentina" <?= $country === 'Argentina' ? 'selected' : '' ?>>Argentina</option>
+                    <option value="United States" <?= $country === 'United States' ? 'selected' : '' ?>>Estados Unidos</option>
+                    <option value="France" <?= $country === 'France' ? 'selected' : '' ?>>França</option>
+                    <option value="Germany" <?= $country === 'Germany' ? 'selected' : '' ?>>Alemanha</option>
+                    <!-- Adicione mais países conforme necessário -->
+                </select>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <form method="get" id="category-form" action="<?= Url::to(['site/index']) ?>">
+                <input type="hidden" name="country" value="<?= Html::encode($country) ?>">
+                <label for="category-select">Selecione a categoria:</label>
+                <select name="category" id="category-select" class="form-select" style="width:auto;display:inline-block;" onchange="document.getElementById('category-form').submit();">
+                    <?php foreach ($categories as $key => $label): ?>
+                        <option value="<?= Html::encode($key) ?>" <?= $category === $key ? 'selected' : '' ?>><?= Html::encode($label) ?></option>
+                    <?php endforeach; ?>
+                </select>
+            </form>
+        </div>
+    </div>
 
     <!-- Últimas notícias -->
     <?php if (empty($news)): ?>
@@ -59,13 +75,13 @@ $this->title = 'Últimas Notícias';
         <!-- Paginação -->
         <div class="mt-4 d-flex justify-content-between">
             <?php if ($currentPage > 1): ?>
-                <a class="btn btn-secondary" href="<?= Url::to(['site/index', 'page' => $currentPage - 1, 'q' => $query]) ?>">« Anterior</a>
+                <a class="btn btn-secondary" href="<?= Url::to(['site/index', 'page' => $currentPage - 1, 'q' => $query, 'country' => $country, 'category' => $category]) ?>">« Anterior</a>
             <?php else: ?>
                 <span></span>
             <?php endif; ?>
 
             <?php if ($currentPage < $totalPages): ?>
-                <a class="btn btn-secondary" href="<?= Url::to(['site/index', 'page' => $currentPage + 1, 'q' => $query]) ?>">Próximo »</a>
+                <a class="btn btn-secondary" href="<?= Url::to(['site/index', 'page' => $currentPage + 1, 'q' => $query, 'country' => $country, 'category' => $category]) ?>">Próximo »</a>
             <?php else: ?>
                 <span></span>
             <?php endif; ?>

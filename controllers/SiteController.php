@@ -59,9 +59,10 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionIndex($page = 1, $country = 'Brazil')
+    public function actionIndex($page = 1, $country = 'Brazil', $category = 'all')
     {
-        $newsData = \app\models\NewsService::latest($page, $country);
+        $newsData = \app\models\NewsService::latest($page, $country, $category);
+        $categories = \app\models\NewsService::getCategories();
 
         return $this->render('index', [
             'news' => $newsData['articles'] ?? [],
@@ -69,6 +70,8 @@ class SiteController extends Controller
             'totalPages' => $newsData['totalPages'] ?? 1,
             'query' => '',
             'country' => $country,
+            'category' => $category,
+            'categories' => $categories,
         ]);
     }
 
@@ -133,4 +136,24 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+        public function actionSignup()
+    {
+        $model = new \app\models\SignupForm();
+
+        if ($model->load(Yii::$app->request->post()) && $model->signup()) {
+            Yii::$app->session->setFlash('success', 'Usuário cadastrado com sucesso!');
+            return $this->redirect(['login']);
+        }
+
+        return $this->render('signup', [
+            'model' => $model,
+        ]);
+
+        if ($model->load(Yii::$app->request->post()) && $model->login()) {
+            return $this->redirect(['dashboard/index']);
+        }
+    }
+
+    
 }

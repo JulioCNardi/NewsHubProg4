@@ -62,9 +62,10 @@ class NewsService
      *
      * @param int $page
      * @param string $country
+     * @param string $category
      * @return array
      */
-    public static function latest($page = 1, $country = 'Brazil')
+    public static function latest($page = 1, $country = 'Brazil', $category = null)
     {
         $apiKey = trim(getenv('API_KEY')); // garante que não tenha espaços
         $pageSize = 12;
@@ -74,6 +75,11 @@ class NewsService
              . "&page={$page}&page-size={$pageSize}"
              . "&api-key=" . urlencode($apiKey)
              . "&show-fields=thumbnail,headline,trailText,short-url";
+
+        // Adicionar filtro de categoria se especificado
+        if ($category && $category !== 'all') {
+            $url .= "&section=" . urlencode($category);
+        }
 
         $response = @file_get_contents($url);
         if ($response === false) {
@@ -98,6 +104,32 @@ class NewsService
             'articles' => $articles,
             'currentPage' => $data['response']['currentPage'] ?? 1,
             'totalPages' => $data['response']['pages'] ?? 1,
+        ];
+    }
+
+    /**
+     * Obtém as categorias disponíveis na API
+     *
+     * @return array
+     */
+    public static function getCategories()
+    {
+        return [
+            'all' => 'Todas as categorias',
+            'world' => 'Mundo',
+            'politics' => 'Política',
+            'sport' => 'Esportes',
+            'technology' => 'Tecnologia',
+            'business' => 'Negócios',
+            'science' => 'Ciência',
+            'culture' => 'Cultura',
+            'lifestyle' => 'Estilo de vida',
+            'opinion' => 'Opinião',
+            'environment' => 'Meio ambiente',
+            'health' => 'Saúde',
+            'education' => 'Educação',
+            'travel' => 'Viagem',
+            'food' => 'Culinária',
         ];
     }
 }

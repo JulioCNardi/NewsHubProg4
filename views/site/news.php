@@ -22,7 +22,12 @@ $this->title = 'Últimas Notícias';
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title"><?= $article['webTitle'] ?></h5>
                             <p class="card-text text-muted flex-grow-1"><?= $article['fields']['trailText'] ?? '' ?></p>
-                            <a href="<?= $article['webUrl'] ?>" class="btn btn-primary mt-auto" target="_blank">Ler mais</a>
+                            <a href="<?= $article['webUrl'] ?>" 
+                               class="btn btn-primary mt-auto news-click-track" 
+                               target="_blank"
+                               data-title="<?= htmlspecialchars($article['webTitle']) ?>"
+                               data-url="<?= htmlspecialchars($article['webUrl']) ?>"
+                               data-description="<?= htmlspecialchars($article['fields']['trailText'] ?? '') ?>">Ler mais</a>
                         </div>
                     </div>
                 </div>
@@ -37,3 +42,39 @@ $this->title = 'Últimas Notícias';
     }
     ?>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Rastrear cliques em notícias
+    document.querySelectorAll('.news-click-track').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            var title = this.getAttribute('data-title');
+            var url = this.getAttribute('data-url');
+            var description = this.getAttribute('data-description');
+            
+            // Enviar dados para o servidor via AJAX
+            fetch('<?= \yii\helpers\Url::to(['news/track-click']) ?>', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRF-Token': '<?= Yii::$app->request->csrfToken ?>'
+                },
+                body: 'title=' + encodeURIComponent(title) + 
+                      '&url=' + encodeURIComponent(url) + 
+                      '&description=' + encodeURIComponent(description)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    console.log('Clique registrado no histórico');
+                } else {
+                    console.log('Erro ao registrar clique:', data.message);
+                }
+            })
+            .catch(error => {
+                console.log('Erro ao registrar clique:', error);
+            });
+        });
+    });
+});
+</script>

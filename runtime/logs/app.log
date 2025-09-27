@@ -6224,3 +6224,1256 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1758906406.9435
     'REQUEST_TIME' => 1758906406
 ]
+2025-09-26 23:31:32 [::1][-][qnvr3fs6qlsoglbjviftttqtsi][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2basic' in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Connection.php:722
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Connection.php(722): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Connection.php(637): yii\db\Connection->createPdoInstance()
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(402): yii\db\Connection->getSlavePdo(true)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(426): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#7 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\BaseObject.php(112): yii\db\mysql\QueryBuilder->init()
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#9 [internal function]: yii\db\QueryBuilder->__construct(Object(yii\db\Connection), Array)
+#10 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->newInstanceArgs(Array)
+#11 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\di\Container.php(176): yii\di\Container->build('yii\\db\\mysql\\Qu...', Array, Array)
+#12 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\BaseYii.php(354): yii\di\Container->get('yii\\db\\mysql\\Qu...', Array)
+#13 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\mysql\Schema.php(261): yii\BaseYii::createObject('yii\\db\\mysql\\Qu...', Array)
+#14 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Schema.php(247): yii\db\mysql\Schema->createQueryBuilder()
+#15 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Connection.php(884): yii\db\Schema->getQueryBuilder()
+#16 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\ActiveQuery.php(349): yii\db\Connection->getQueryBuilder()
+#17 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Query.php(442): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#18 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\validators\UniqueValidator.php(195): yii\db\Query->exists()
+#19 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\validators\UniqueValidator.php(153): yii\validators\UniqueValidator->modelExists('\\app\\models\\Use...', Array, Object(app\models\SignupForm))
+#20 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#21 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Connection.php(1130): call_user_func(Object(Closure), Object(yii\db\Connection))
+#22 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\validators\UniqueValidator.php(154): yii\db\Connection->useMaster(Object(Closure))
+#23 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\UniqueValidator->validateAttribute(Object(app\models\SignupForm), 'username')
+#24 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Model.php(389): yii\validators\Validator->validateAttributes(Object(app\models\SignupForm), Array)
+#25 C:\laragon\www\NewsHubProg4\models\SignUpForm.php(24): yii\base\Model->validate()
+#26 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(141): app\models\SignupForm->signup()
+#27 [internal function]: app\controllers\SiteController->actionSignup()
+#28 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#29 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#30 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('signup', Array)
+#31 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#32 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#34 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2basic' in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Connection.php:648
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Connection.php(1067): yii\db\Connection->open()
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Connection.php(1054): yii\db\Connection->getMasterPdo()
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(402): yii\db\Connection->getSlavePdo(true)
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(426): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\BaseObject.php(112): yii\db\mysql\QueryBuilder->init()
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#7 [internal function]: yii\db\QueryBuilder->__construct(Object(yii\db\Connection), Array)
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\di\Container.php(417): ReflectionClass->newInstanceArgs(Array)
+#9 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\di\Container.php(176): yii\di\Container->build('yii\\db\\mysql\\Qu...', Array, Array)
+#10 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\BaseYii.php(354): yii\di\Container->get('yii\\db\\mysql\\Qu...', Array)
+#11 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\mysql\Schema.php(261): yii\BaseYii::createObject('yii\\db\\mysql\\Qu...', Array)
+#12 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Schema.php(247): yii\db\mysql\Schema->createQueryBuilder()
+#13 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Connection.php(884): yii\db\Schema->getQueryBuilder()
+#14 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\ActiveQuery.php(349): yii\db\Connection->getQueryBuilder()
+#15 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Query.php(442): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#16 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\validators\UniqueValidator.php(195): yii\db\Query->exists()
+#17 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\validators\UniqueValidator.php(153): yii\validators\UniqueValidator->modelExists('\\app\\models\\Use...', Array, Object(app\models\SignupForm))
+#18 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#19 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Connection.php(1130): call_user_func(Object(Closure), Object(yii\db\Connection))
+#20 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\validators\UniqueValidator.php(154): yii\db\Connection->useMaster(Object(Closure))
+#21 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\UniqueValidator->validateAttribute(Object(app\models\SignupForm), 'username')
+#22 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Model.php(389): yii\validators\Validator->validateAttributes(Object(app\models\SignupForm), Array)
+#23 C:\laragon\www\NewsHubProg4\models\SignUpForm.php(24): yii\base\Model->validate()
+#24 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(141): app\models\SignupForm->signup()
+#25 [internal function]: app\controllers\SiteController->actionSignup()
+#26 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#27 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#28 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('signup', Array)
+#29 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/signup', Array)
+#30 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#32 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1049
+    [2] => Unknown database 'yii2basic'
+)
+
+2025-09-26 23:31:31 [::1][-][qnvr3fs6qlsoglbjviftttqtsi][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf' => 'xkSNJ-rxa5ZrYZj4jad3cz8JuRKObumlqQwI_eHOCDevMNhikLgl0CMTrZe9wzVGa2CNYtcYk8PnWUOSroBMQw=='
+    'SignupForm' => [
+        'username' => 'teste'
+        'password' => '123456'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'qnvr3fs6qlsoglbjviftttqtsi'
+    '_csrf' => 'b191a7f1309583bc8621d425954cd9bafc4e96e1fdff0571b73cb72a078db85ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"itUEzINFHr5o0dB5Ti4pYvzfNUKoONDt\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '161'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,it;q=0.6,fr;q=0.5,ru;q=0.4,ja;q=0.3,es;q=0.2,pt-PT;q=0.1,zh-CN;q=0.1,zh;q=0.1'
+    'HTTP_COOKIE' => 'PHPSESSID=qnvr3fs6qlsoglbjviftttqtsi; _csrf=b191a7f1309583bc8621d425954cd9bafc4e96e1fdff0571b73cb72a078db85ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22itUEzINFHr5o0dB5Ti4pYvzfNUKoONDt%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\cursor\\resources\\app\\bin;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '51630'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758929491.9611
+    'REQUEST_TIME' => 1758929491
+]
+2025-09-26 23:41:46 [::1][1][3tv14kuv4q7nlmqqcubor26bqh][error][Error] Error: Class "Url" not found in C:\laragon\www\NewsHubProg4\views\layouts\main.php:63
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\View.php(348): require()
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(428): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, Object(app\controllers\SiteController))
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(414): yii\base\Controller->renderContent('\r\n<div class="c...')
+#4 C:\laragon\www\NewsHubProg4\controllers\SiteController.php(71): yii\base\Controller->render('index', Array)
+#5 [internal function]: app\controllers\SiteController->actionIndex(1, 'Brazil')
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#7 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('', Array)
+#9 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('', Array)
+#10 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#12 {main}
+2025-09-26 23:41:45 [::1][1][3tv14kuv4q7nlmqqcubor26bqh][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '3tv14kuv4q7nlmqqcubor26bqh'
+    '_identity' => '54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"diW223osEKGUTCSdT6mR9UuI7n3E2rwY\",2592000]\";}'
+    '_csrf' => '6680847b79415a0aa73b890226f0cf8a7f48fdf9dad38d9be3df4774e143a299a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fs_RkuMmhQju_F0hnYpuxUzYqBx9AB3C\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'diW223osEKGUTCSdT6mR9UuI7n3E2rwY'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=site%2Flogin'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,it;q=0.6,fr;q=0.5,ru;q=0.4,ja;q=0.3,es;q=0.2,pt-PT;q=0.1,zh-CN;q=0.1,zh;q=0.1'
+    'HTTP_COOKIE' => 'PHPSESSID=3tv14kuv4q7nlmqqcubor26bqh; _identity=54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22diW223osEKGUTCSdT6mR9UuI7n3E2rwY%22%2C2592000%5D%22%3B%7D; _csrf=6680847b79415a0aa73b890226f0cf8a7f48fdf9dad38d9be3df4774e143a299a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fs_RkuMmhQju_F0hnYpuxUzYqBx9AB3C%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\cursor\\resources\\app\\bin;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '51713'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758930105.3367
+    'REQUEST_TIME' => 1758930105
+]
+2025-09-26 23:44:36 [::1][1][3tv14kuv4q7nlmqqcubor26bqh][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "user/index". in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/index', Array)
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#2 {main}
+2025-09-26 23:44:36 [::1][1][3tv14kuv4q7nlmqqcubor26bqh][info][application] $_GET = [
+    'r' => 'user/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '3tv14kuv4q7nlmqqcubor26bqh'
+    '_identity' => '54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"diW223osEKGUTCSdT6mR9UuI7n3E2rwY\",2592000]\";}'
+    '_csrf' => '6680847b79415a0aa73b890226f0cf8a7f48fdf9dad38d9be3df4774e143a299a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fs_RkuMmhQju_F0hnYpuxUzYqBx9AB3C\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'diW223osEKGUTCSdT6mR9UuI7n3E2rwY'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=dashboard%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,it;q=0.6,fr;q=0.5,ru;q=0.4,ja;q=0.3,es;q=0.2,pt-PT;q=0.1,zh-CN;q=0.1,zh;q=0.1'
+    'HTTP_COOKIE' => 'PHPSESSID=3tv14kuv4q7nlmqqcubor26bqh; _identity=54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22diW223osEKGUTCSdT6mR9UuI7n3E2rwY%22%2C2592000%5D%22%3B%7D; _csrf=6680847b79415a0aa73b890226f0cf8a7f48fdf9dad38d9be3df4774e143a299a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fs_RkuMmhQju_F0hnYpuxUzYqBx9AB3C%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\cursor\\resources\\app\\bin;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '51730'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Findex'
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?r=user%2Findex'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758930276.5259
+    'REQUEST_TIME' => 1758930276
+]
+2025-09-26 23:44:42 [::1][1][3tv14kuv4q7nlmqqcubor26bqh][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "settings/index". in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php:564
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('settings/index', Array)
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#2 {main}
+2025-09-26 23:44:42 [::1][1][3tv14kuv4q7nlmqqcubor26bqh][info][application] $_GET = [
+    'r' => 'settings/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '3tv14kuv4q7nlmqqcubor26bqh'
+    '_identity' => '54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"diW223osEKGUTCSdT6mR9UuI7n3E2rwY\",2592000]\";}'
+    '_csrf' => '6680847b79415a0aa73b890226f0cf8a7f48fdf9dad38d9be3df4774e143a299a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"fs_RkuMmhQju_F0hnYpuxUzYqBx9AB3C\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'diW223osEKGUTCSdT6mR9UuI7n3E2rwY'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=dashboard%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,it;q=0.6,fr;q=0.5,ru;q=0.4,ja;q=0.3,es;q=0.2,pt-PT;q=0.1,zh-CN;q=0.1,zh;q=0.1'
+    'HTTP_COOKIE' => 'PHPSESSID=3tv14kuv4q7nlmqqcubor26bqh; _identity=54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22diW223osEKGUTCSdT6mR9UuI7n3E2rwY%22%2C2592000%5D%22%3B%7D; _csrf=6680847b79415a0aa73b890226f0cf8a7f48fdf9dad38d9be3df4774e143a299a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22fs_RkuMmhQju_F0hnYpuxUzYqBx9AB3C%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\cursor\\resources\\app\\bin;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '51730'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=settings%2Findex'
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?r=settings%2Findex'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758930282.6141
+    'REQUEST_TIME' => 1758930282
+]
+2025-09-26 23:52:09 [::1][1][99i2h6bdmi9f2brh6mpsgkn0tn][error][yii\base\InvalidCallException] yii\base\InvalidCallException: Getting write-only property: app\models\User::password in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Component.php:151
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('password')
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\helpers\BaseHtml.php(2296): yii\db\BaseActiveRecord->__get('password')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\helpers\BaseHtml.php(1388): yii\helpers\BaseHtml::getAttributeValue(Object(app\models\User), 'password')
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\helpers\BaseHtml.php(1505): yii\helpers\BaseHtml::activeInput('password', Object(app\models\User), 'password', Array)
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\widgets\ActiveField.php(460): yii\helpers\BaseHtml::activePasswordInput(Object(app\models\User), 'password', Array)
+#5 C:\laragon\www\NewsHubProg4\views\user\update.php(14): yii\widgets\ActiveField->passwordInput()
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\View.php(348): require('C:\\laragon\\www\\...')
+#7 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\View.php(258): yii\base\View->renderPhpFile('C:\\laragon\\www\\...', Array)
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\View.php(157): yii\base\View->renderFile('C:\\laragon\\www\\...', Array, Object(app\controllers\UserController))
+#9 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(413): yii\base\View->render('update', Array, Object(app\controllers\UserController))
+#10 C:\laragon\www\NewsHubProg4\controllers\UserController.php(48): yii\base\Controller->render('update', Array)
+#11 [internal function]: app\controllers\UserController->actionUpdate('1')
+#12 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#13 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#14 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('update', Array)
+#15 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/update', Array)
+#16 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#18 {main}
+2025-09-26 23:52:09 [::1][1][99i2h6bdmi9f2brh6mpsgkn0tn][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '99i2h6bdmi9f2brh6mpsgkn0tn'
+    '_identity' => '54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"diW223osEKGUTCSdT6mR9UuI7n3E2rwY\",2592000]\";}'
+    '_csrf' => '0ef35a1651e69a7376c4cb1f3644ec905c7bc25ad9356b15c9616f5dda7f9bd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m8m2U1LCyqOSHXF5t_aeuct6mSKfpdrf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'diW223osEKGUTCSdT6mR9UuI7n3E2rwY'
+    '__captcha/site/captcha' => 'zaxiluk'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=dashboard%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,it;q=0.6,fr;q=0.5,ru;q=0.4,ja;q=0.3,es;q=0.2,pt-PT;q=0.1,zh-CN;q=0.1,zh;q=0.1'
+    'HTTP_COOKIE' => 'PHPSESSID=99i2h6bdmi9f2brh6mpsgkn0tn; _identity=54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22diW223osEKGUTCSdT6mR9UuI7n3E2rwY%22%2C2592000%5D%22%3B%7D; _csrf=0ef35a1651e69a7376c4cb1f3644ec905c7bc25ad9356b15c9616f5dda7f9bd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m8m2U1LCyqOSHXF5t_aeuct6mSKfpdrf%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\cursor\\resources\\app\\bin;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '51818'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=1'
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?r=user%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758930729.6143
+    'REQUEST_TIME' => 1758930729
+]
+2025-09-26 23:53:49 [::1][1][99i2h6bdmi9f2brh6mpsgkn0tn][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Unknown scenario: update in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Model.php:379
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\ActiveRecord.php(680): yii\base\Model->validate(NULL)
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\BaseActiveRecord.php(691): yii\db\ActiveRecord->update(true, NULL)
+#2 C:\laragon\www\NewsHubProg4\controllers\UserController.php(39): yii\db\BaseActiveRecord->save()
+#3 [internal function]: app\controllers\UserController->actionUpdate('1')
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('update', Array)
+#7 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/update', Array)
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#10 {main}
+2025-09-26 23:53:48 [::1][1][99i2h6bdmi9f2brh6mpsgkn0tn][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'CqbmwR4eYBxNWSwi2Fn4J1EoQfKhYH8GuZrtu5hbjQ9nnovzSy8sXzQoY3GQAb4SJXcgl9QDCzDUyabd6D__aQ=='
+    'User' => [
+        'username' => 'teste'
+        'password' => '1'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '99i2h6bdmi9f2brh6mpsgkn0tn'
+    '_identity' => '54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"diW223osEKGUTCSdT6mR9UuI7n3E2rwY\",2592000]\";}'
+    '_csrf' => '0ef35a1651e69a7376c4cb1f3644ec905c7bc25ad9356b15c9616f5dda7f9bd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m8m2U1LCyqOSHXF5t_aeuct6mSKfpdrf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'diW223osEKGUTCSdT6mR9UuI7n3E2rwY'
+    '__captcha/site/captcha' => 'zaxiluk'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '144'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=user%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,it;q=0.6,fr;q=0.5,ru;q=0.4,ja;q=0.3,es;q=0.2,pt-PT;q=0.1,zh-CN;q=0.1,zh;q=0.1'
+    'HTTP_COOKIE' => 'PHPSESSID=99i2h6bdmi9f2brh6mpsgkn0tn; _identity=54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22diW223osEKGUTCSdT6mR9UuI7n3E2rwY%22%2C2592000%5D%22%3B%7D; _csrf=0ef35a1651e69a7376c4cb1f3644ec905c7bc25ad9356b15c9616f5dda7f9bd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m8m2U1LCyqOSHXF5t_aeuct6mSKfpdrf%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\cursor\\resources\\app\\bin;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '51826'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=1'
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?r=user%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758930828.9786
+    'REQUEST_TIME' => 1758930828
+]
+2025-09-26 23:53:57 [::1][1][99i2h6bdmi9f2brh6mpsgkn0tn][error][yii\base\InvalidArgumentException] yii\base\InvalidArgumentException: Unknown scenario: update in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Model.php:379
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\ActiveRecord.php(680): yii\base\Model->validate(NULL)
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\BaseActiveRecord.php(691): yii\db\ActiveRecord->update(true, NULL)
+#2 C:\laragon\www\NewsHubProg4\controllers\UserController.php(39): yii\db\BaseActiveRecord->save()
+#3 [internal function]: app\controllers\UserController->actionUpdate('1')
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#6 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('update', Array)
+#7 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/update', Array)
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#10 {main}
+2025-09-26 23:53:56 [::1][1][99i2h6bdmi9f2brh6mpsgkn0tn][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'LoP_QHQYk_zxsBza59Ti4f_WXhUxeNogy71c4eh4SfVDu5JyISnfv4jBU4mvjKTUi4k_cEQbrham7heHmBw7kw=='
+    'User' => [
+        'username' => 'teste'
+        'password' => 'teste2'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '99i2h6bdmi9f2brh6mpsgkn0tn'
+    '_identity' => '54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"diW223osEKGUTCSdT6mR9UuI7n3E2rwY\",2592000]\";}'
+    '_csrf' => '0ef35a1651e69a7376c4cb1f3644ec905c7bc25ad9356b15c9616f5dda7f9bd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m8m2U1LCyqOSHXF5t_aeuct6mSKfpdrf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'diW223osEKGUTCSdT6mR9UuI7n3E2rwY'
+    '__captcha/site/captcha' => 'zaxiluk'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '149'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=user%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,it;q=0.6,fr;q=0.5,ru;q=0.4,ja;q=0.3,es;q=0.2,pt-PT;q=0.1,zh-CN;q=0.1,zh;q=0.1'
+    'HTTP_COOKIE' => 'PHPSESSID=99i2h6bdmi9f2brh6mpsgkn0tn; _identity=54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22diW223osEKGUTCSdT6mR9UuI7n3E2rwY%22%2C2592000%5D%22%3B%7D; _csrf=0ef35a1651e69a7376c4cb1f3644ec905c7bc25ad9356b15c9616f5dda7f9bd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m8m2U1LCyqOSHXF5t_aeuct6mSKfpdrf%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\cursor\\resources\\app\\bin;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '51831'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=1'
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?r=user%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758930836.9452
+    'REQUEST_TIME' => 1758930836
+]
+2025-09-26 23:56:48 [::1][1][99i2h6bdmi9f2brh6mpsgkn0tn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\User::email in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('email')
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\validators\Validator.php(306): yii\db\BaseActiveRecord->__get('email')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\Validator->validateAttribute(Object(app\models\User), 'email')
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Model.php(389): yii\validators\Validator->validateAttributes(Object(app\models\User), Array)
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\ActiveRecord.php(680): yii\base\Model->validate(Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\BaseActiveRecord.php(691): yii\db\ActiveRecord->update(true, NULL)
+#6 C:\laragon\www\NewsHubProg4\controllers\UserController.php(34): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\UserController->actionUpdate('1')
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#9 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('update', Array)
+#11 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/update', Array)
+#12 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#14 {main}
+2025-09-26 23:56:48 [::1][1][99i2h6bdmi9f2brh6mpsgkn0tn][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'LoP_QHQYk_zxsBza59Ti4f_WXhUxeNogy71c4eh4SfVDu5JyISnfv4jBU4mvjKTUi4k_cEQbrham7heHmBw7kw=='
+    'User' => [
+        'username' => 'teste'
+        'password' => 'teste2'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '99i2h6bdmi9f2brh6mpsgkn0tn'
+    '_identity' => '54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"diW223osEKGUTCSdT6mR9UuI7n3E2rwY\",2592000]\";}'
+    '_csrf' => '0ef35a1651e69a7376c4cb1f3644ec905c7bc25ad9356b15c9616f5dda7f9bd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m8m2U1LCyqOSHXF5t_aeuct6mSKfpdrf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'diW223osEKGUTCSdT6mR9UuI7n3E2rwY'
+    '__captcha/site/captcha' => 'zaxiluk'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '149'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=user%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,it;q=0.6,fr;q=0.5,ru;q=0.4,ja;q=0.3,es;q=0.2,pt-PT;q=0.1,zh-CN;q=0.1,zh;q=0.1'
+    'HTTP_COOKIE' => 'PHPSESSID=99i2h6bdmi9f2brh6mpsgkn0tn; _identity=54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22diW223osEKGUTCSdT6mR9UuI7n3E2rwY%22%2C2592000%5D%22%3B%7D; _csrf=0ef35a1651e69a7376c4cb1f3644ec905c7bc25ad9356b15c9616f5dda7f9bd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m8m2U1LCyqOSHXF5t_aeuct6mSKfpdrf%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\cursor\\resources\\app\\bin;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '51858'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=1'
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?r=user%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758931008.5582
+    'REQUEST_TIME' => 1758931008
+]
+2025-09-26 23:56:59 [::1][1][99i2h6bdmi9f2brh6mpsgkn0tn][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\User::email in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Component.php:154
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\BaseActiveRecord.php(296): yii\base\Component->__get('email')
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\validators\Validator.php(306): yii\db\BaseActiveRecord->__get('email')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\validators\Validator.php(260): yii\validators\Validator->validateAttribute(Object(app\models\User), 'email')
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Model.php(389): yii\validators\Validator->validateAttributes(Object(app\models\User), Array)
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\ActiveRecord.php(680): yii\base\Model->validate(Array)
+#5 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\BaseActiveRecord.php(691): yii\db\ActiveRecord->update(true, NULL)
+#6 C:\laragon\www\NewsHubProg4\controllers\UserController.php(34): yii\db\BaseActiveRecord->save()
+#7 [internal function]: app\controllers\UserController->actionUpdate('1')
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#9 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('update', Array)
+#11 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('user/update', Array)
+#12 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#14 {main}
+2025-09-26 23:56:59 [::1][1][99i2h6bdmi9f2brh6mpsgkn0tn][info][application] $_GET = [
+    'r' => 'user/update'
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'TpQbT54MavEFXAl4jm18d1hE2PeugOeAfUILekSAntEjrHZ9yz0msnwtRivGNTpCLBu5ktvjk7YQEUAcNOTstw=='
+    'User' => [
+        'username' => 'teste'
+        'password' => '1234567'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '99i2h6bdmi9f2brh6mpsgkn0tn'
+    '_identity' => '54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"diW223osEKGUTCSdT6mR9UuI7n3E2rwY\",2592000]\";}'
+    '_csrf' => '0ef35a1651e69a7376c4cb1f3644ec905c7bc25ad9356b15c9616f5dda7f9bd8a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"m8m2U1LCyqOSHXF5t_aeuct6mSKfpdrf\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    '__authKey' => 'diW223osEKGUTCSdT6mR9UuI7n3E2rwY'
+    '__captcha/site/captcha' => 'zaxiluk'
+    '__captcha/site/captchacount' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '150'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=user%2Fupdate&id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,it;q=0.6,fr;q=0.5,ru;q=0.4,ja;q=0.3,es;q=0.2,pt-PT;q=0.1,zh-CN;q=0.1,zh;q=0.1'
+    'HTTP_COOKIE' => 'PHPSESSID=99i2h6bdmi9f2brh6mpsgkn0tn; _identity=54be2f1f8467d5c5ff55c34666316621a8945fd7870434322663b3e59c9fedf5a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22diW223osEKGUTCSdT6mR9UuI7n3E2rwY%22%2C2592000%5D%22%3B%7D; _csrf=0ef35a1651e69a7376c4cb1f3644ec905c7bc25ad9356b15c9616f5dda7f9bd8a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22m8m2U1LCyqOSHXF5t_aeuct6mSKfpdrf%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\cursor\\resources\\app\\bin;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '51865'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=user%2Fupdate&id=1'
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?r=user%2Fupdate&id=1'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758931019.6101
+    'REQUEST_TIME' => 1758931019
+]
+2025-09-27 00:07:08 [::1][2][a76otokca42ov85arfj3uvpo69][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: news/history in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php:155
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('history', Array)
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('news/history', Array)
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#2 {main}
+2025-09-27 00:07:08 [::1][2][a76otokca42ov85arfj3uvpo69][info][application] $_GET = [
+    'r' => 'news/history'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'a76otokca42ov85arfj3uvpo69'
+    '_identity' => '7ed41835cf8b01852008faa3cdeefc5688d26b37fbf79a6e3f25dab51d434f2ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"vD-YtPDGwz_0V2WDPtVuObM4cA5W3Piw\",2592000]\";}'
+    '_csrf' => 'c095c9e0ada6feeda7d1f056639a54f0790d207d99f14e3657393dc07c896b77a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dU5Aa9bpKJdl6IQeoPa8SDDa7jpE3Izl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    '__authKey' => 'vD-YtPDGwz_0V2WDPtVuObM4cA5W3Piw'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=dashboard%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,it;q=0.6,fr;q=0.5,ru;q=0.4,ja;q=0.3,es;q=0.2,pt-PT;q=0.1,zh-CN;q=0.1,zh;q=0.1'
+    'HTTP_COOKIE' => 'PHPSESSID=a76otokca42ov85arfj3uvpo69; _identity=7ed41835cf8b01852008faa3cdeefc5688d26b37fbf79a6e3f25dab51d434f2ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22vD-YtPDGwz_0V2WDPtVuObM4cA5W3Piw%22%2C2592000%5D%22%3B%7D; _csrf=c095c9e0ada6feeda7d1f056639a54f0790d207d99f14e3657393dc07c896b77a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dU5Aa9bpKJdl6IQeoPa8SDDa7jpE3Izl%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\cursor\\resources\\app\\bin;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '52068'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=news%2Fhistory'
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?r=news%2Fhistory'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758931628.425
+    'REQUEST_TIME' => 1758931628
+]
+2025-09-27 00:08:37 [::1][2][a76otokca42ov85arfj3uvpo69][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'newshub.news_history' doesn't exist in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php:1320
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(1320): PDOStatement->execute()
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(1186): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Query.php(249): yii\db\Command->queryAll()
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\ActiveQuery.php(152): yii\db\Query->all(NULL)
+#5 C:\laragon\www\NewsHubProg4\models\NewsHistory.php(69): yii\db\ActiveQuery->all()
+#6 C:\laragon\www\NewsHubProg4\controllers\NewsController.php(56): app\models\NewsHistory::getUserHistory(50)
+#7 [internal function]: app\controllers\NewsController->actionHistory()
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#9 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('history', Array)
+#11 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('news/history', Array)
+#12 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'newshub.news_history' doesn't exist
+The SQL being executed was: SELECT * FROM `news_history` WHERE `user_id`=2 ORDER BY `clicked_at` DESC LIMIT 50 in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Schema.php:676
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(1325): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(1186): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Query.php(249): yii\db\Command->queryAll()
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\ActiveQuery.php(152): yii\db\Query->all(NULL)
+#5 C:\laragon\www\NewsHubProg4\models\NewsHistory.php(69): yii\db\ActiveQuery->all()
+#6 C:\laragon\www\NewsHubProg4\controllers\NewsController.php(56): app\models\NewsHistory::getUserHistory(50)
+#7 [internal function]: app\controllers\NewsController->actionHistory()
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#9 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('history', Array)
+#11 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('news/history', Array)
+#12 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'newshub.news_history' doesn't exist
+)
+
+2025-09-27 00:08:37 [::1][2][a76otokca42ov85arfj3uvpo69][info][application] $_GET = [
+    'r' => 'news/history'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'a76otokca42ov85arfj3uvpo69'
+    '_identity' => '7ed41835cf8b01852008faa3cdeefc5688d26b37fbf79a6e3f25dab51d434f2ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"vD-YtPDGwz_0V2WDPtVuObM4cA5W3Piw\",2592000]\";}'
+    '_csrf' => 'c095c9e0ada6feeda7d1f056639a54f0790d207d99f14e3657393dc07c896b77a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dU5Aa9bpKJdl6IQeoPa8SDDa7jpE3Izl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    '__authKey' => 'vD-YtPDGwz_0V2WDPtVuObM4cA5W3Piw'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=dashboard%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,it;q=0.6,fr;q=0.5,ru;q=0.4,ja;q=0.3,es;q=0.2,pt-PT;q=0.1,zh-CN;q=0.1,zh;q=0.1'
+    'HTTP_COOKIE' => 'PHPSESSID=a76otokca42ov85arfj3uvpo69; _identity=7ed41835cf8b01852008faa3cdeefc5688d26b37fbf79a6e3f25dab51d434f2ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22vD-YtPDGwz_0V2WDPtVuObM4cA5W3Piw%22%2C2592000%5D%22%3B%7D; _csrf=c095c9e0ada6feeda7d1f056639a54f0790d207d99f14e3657393dc07c896b77a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dU5Aa9bpKJdl6IQeoPa8SDDa7jpE3Izl%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\cursor\\resources\\app\\bin;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '52134'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=news%2Fhistory'
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?r=news%2Fhistory'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758931717.291
+    'REQUEST_TIME' => 1758931717
+]
+2025-09-27 00:08:40 [::1][2][a76otokca42ov85arfj3uvpo69][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'newshub.news_history' doesn't exist in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php:1320
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(1320): PDOStatement->execute()
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(1186): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Query.php(249): yii\db\Command->queryAll()
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\ActiveQuery.php(152): yii\db\Query->all(NULL)
+#5 C:\laragon\www\NewsHubProg4\models\NewsHistory.php(69): yii\db\ActiveQuery->all()
+#6 C:\laragon\www\NewsHubProg4\controllers\NewsController.php(56): app\models\NewsHistory::getUserHistory(50)
+#7 [internal function]: app\controllers\NewsController->actionHistory()
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#9 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('history', Array)
+#11 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('news/history', Array)
+#12 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'newshub.news_history' doesn't exist
+The SQL being executed was: SELECT * FROM `news_history` WHERE `user_id`=2 ORDER BY `clicked_at` DESC LIMIT 50 in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Schema.php:676
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(1325): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(1186): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Query.php(249): yii\db\Command->queryAll()
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\ActiveQuery.php(152): yii\db\Query->all(NULL)
+#5 C:\laragon\www\NewsHubProg4\models\NewsHistory.php(69): yii\db\ActiveQuery->all()
+#6 C:\laragon\www\NewsHubProg4\controllers\NewsController.php(56): app\models\NewsHistory::getUserHistory(50)
+#7 [internal function]: app\controllers\NewsController->actionHistory()
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#9 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('history', Array)
+#11 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('news/history', Array)
+#12 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'newshub.news_history' doesn't exist
+)
+
+2025-09-27 00:08:40 [::1][2][a76otokca42ov85arfj3uvpo69][info][application] $_GET = [
+    'r' => 'news/history'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'a76otokca42ov85arfj3uvpo69'
+    '_identity' => '7ed41835cf8b01852008faa3cdeefc5688d26b37fbf79a6e3f25dab51d434f2ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"vD-YtPDGwz_0V2WDPtVuObM4cA5W3Piw\",2592000]\";}'
+    '_csrf' => 'c095c9e0ada6feeda7d1f056639a54f0790d207d99f14e3657393dc07c896b77a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dU5Aa9bpKJdl6IQeoPa8SDDa7jpE3Izl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    '__authKey' => 'vD-YtPDGwz_0V2WDPtVuObM4cA5W3Piw'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=dashboard%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,it;q=0.6,fr;q=0.5,ru;q=0.4,ja;q=0.3,es;q=0.2,pt-PT;q=0.1,zh-CN;q=0.1,zh;q=0.1'
+    'HTTP_COOKIE' => 'PHPSESSID=a76otokca42ov85arfj3uvpo69; _identity=7ed41835cf8b01852008faa3cdeefc5688d26b37fbf79a6e3f25dab51d434f2ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22vD-YtPDGwz_0V2WDPtVuObM4cA5W3Piw%22%2C2592000%5D%22%3B%7D; _csrf=c095c9e0ada6feeda7d1f056639a54f0790d207d99f14e3657393dc07c896b77a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dU5Aa9bpKJdl6IQeoPa8SDDa7jpE3Izl%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\cursor\\resources\\app\\bin;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '52136'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=news%2Fhistory'
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?r=news%2Fhistory'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758931720.4645
+    'REQUEST_TIME' => 1758931720
+]
+2025-09-27 00:08:50 [::1][2][a76otokca42ov85arfj3uvpo69][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'newshub.news_history' doesn't exist in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php:1320
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(1320): PDOStatement->execute()
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(1186): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Query.php(249): yii\db\Command->queryAll()
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\ActiveQuery.php(152): yii\db\Query->all(NULL)
+#5 C:\laragon\www\NewsHubProg4\models\NewsHistory.php(69): yii\db\ActiveQuery->all()
+#6 C:\laragon\www\NewsHubProg4\controllers\NewsController.php(56): app\models\NewsHistory::getUserHistory(50)
+#7 [internal function]: app\controllers\NewsController->actionHistory()
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#9 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('history', Array)
+#11 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('news/history', Array)
+#12 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'newshub.news_history' doesn't exist
+The SQL being executed was: SELECT * FROM `news_history` WHERE `user_id`=2 ORDER BY `clicked_at` DESC LIMIT 50 in C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Schema.php:676
+Stack trace:
+#0 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(1325): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(1186): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Command.php(417): yii\db\Command->queryInternal('fetchAll', NULL)
+#3 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\Query.php(249): yii\db\Command->queryAll()
+#4 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\db\ActiveQuery.php(152): yii\db\Query->all(NULL)
+#5 C:\laragon\www\NewsHubProg4\models\NewsHistory.php(69): yii\db\ActiveQuery->all()
+#6 C:\laragon\www\NewsHubProg4\controllers\NewsController.php(56): app\models\NewsHistory::getUserHistory(50)
+#7 [internal function]: app\controllers\NewsController->actionHistory()
+#8 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\InlineAction.php(60): call_user_func_array(Array, Array)
+#9 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Controller.php(184): yii\base\InlineAction->runWithParams(Array)
+#10 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Module.php(555): yii\base\Controller->runAction('history', Array)
+#11 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('news/history', Array)
+#12 C:\laragon\www\NewsHubProg4\vendor\yiisoft\yii2\base\Application.php(387): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\laragon\www\NewsHubProg4\web\index.php(15): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'newshub.news_history' doesn't exist
+)
+
+2025-09-27 00:08:50 [::1][2][a76otokca42ov85arfj3uvpo69][info][application] $_GET = [
+    'r' => 'news/history'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'a76otokca42ov85arfj3uvpo69'
+    '_identity' => '7ed41835cf8b01852008faa3cdeefc5688d26b37fbf79a6e3f25dab51d434f2ba:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[2,\"vD-YtPDGwz_0V2WDPtVuObM4cA5W3Piw\",2592000]\";}'
+    '_csrf' => 'c095c9e0ada6feeda7d1f056639a54f0790d207d99f14e3657393dc07c896b77a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dU5Aa9bpKJdl6IQeoPa8SDDa7jpE3Izl\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    '__authKey' => 'vD-YtPDGwz_0V2WDPtVuObM4cA5W3Piw'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Opera GX\";v=\"121\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'same-origin'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_REFERER' => 'http://localhost/NewsHubProg4/web/index.php?r=dashboard%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br, zstd'
+    'HTTP_ACCEPT_LANGUAGE' => 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7,it;q=0.6,fr;q=0.5,ru;q=0.4,ja;q=0.3,es;q=0.2,pt-PT;q=0.1,zh-CN;q=0.1,zh;q=0.1'
+    'HTTP_COOKIE' => 'PHPSESSID=a76otokca42ov85arfj3uvpo69; _identity=7ed41835cf8b01852008faa3cdeefc5688d26b37fbf79a6e3f25dab51d434f2ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22vD-YtPDGwz_0V2WDPtVuObM4cA5W3Piw%22%2C2592000%5D%22%3B%7D; _csrf=c095c9e0ada6feeda7d1f056639a54f0790d207d99f14e3657393dc07c896b77a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dU5Aa9bpKJdl6IQeoPa8SDDa7jpE3Izl%22%3B%7D'
+    'PATH' => 'C:\\Program Files\\Python313\\Scripts\\;C:\\Program Files\\Python313\\;C:\\Program Files\\Eclipse Adoptium\\jre-8.0.452.9-hotspot\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\chocolatey\\bin;C:\\Program Files\\cursor\\resources\\app\\bin;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\User\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.54 (Win64) OpenSSL/1.1.1q PHP/8.1.10'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/laragon/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/laragon/www'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'C:/laragon/www/NewsHubProg4/web/index.php'
+    'REMOTE_PORT' => '52144'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=news%2Fhistory'
+    'REQUEST_URI' => '/NewsHubProg4/web/index.php?r=news%2Fhistory'
+    'SCRIPT_NAME' => '/NewsHubProg4/web/index.php'
+    'PHP_SELF' => '/NewsHubProg4/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1758931730.441
+    'REQUEST_TIME' => 1758931730
+]

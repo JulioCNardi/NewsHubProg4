@@ -37,7 +37,12 @@ $this->title = 'Busca de Notícias';
                         <?php endif; ?>
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a href="<?= Html::encode($item['url']) ?>" target="_blank">
+                                <a href="<?= Html::encode($item['url']) ?>" 
+                                   target="_blank"
+                                   class="news-click-track"
+                                   data-title="<?= htmlspecialchars($item['title']) ?>"
+                                   data-url="<?= htmlspecialchars($item['url']) ?>"
+                                   data-description="<?= htmlspecialchars($item['description']) ?>">
                                     <?= Html::encode($item['title']) ?>
                                 </a>
                             </h5>
@@ -49,3 +54,39 @@ $this->title = 'Busca de Notícias';
         </div>
     <?php endif; ?>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Rastrear cliques em notícias
+    document.querySelectorAll('.news-click-track').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            var title = this.getAttribute('data-title');
+            var url = this.getAttribute('data-url');
+            var description = this.getAttribute('data-description');
+            
+            // Enviar dados para o servidor via AJAX
+            fetch('<?= \yii\helpers\Url::to(['news/track-click']) ?>', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRF-Token': '<?= Yii::$app->request->csrfToken ?>'
+                },
+                body: 'title=' + encodeURIComponent(title) + 
+                      '&url=' + encodeURIComponent(url) + 
+                      '&description=' + encodeURIComponent(description)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    console.log('Clique registrado no histórico');
+                } else {
+                    console.log('Erro ao registrar clique:', data.message);
+                }
+            })
+            .catch(error => {
+                console.log('Erro ao registrar clique:', error);
+            });
+        });
+    });
+});
+</script>

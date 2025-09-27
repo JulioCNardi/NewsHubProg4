@@ -9,6 +9,7 @@ use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 
@@ -36,27 +37,36 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         'brandUrl' => Yii::$app->homeUrl,
         'options' => ['class' => 'navbar-expand-md navbar-dark bg-dark fixed-top']
     ]);
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest
-                ? ['label' => 'Login', 'url' => ['/site/login']]
-                : '<li class="nav-item">'
-                    . Html::beginForm(['/site/logout'])
+            echo Nav::widget([
+            'options' => ['class' => 'navbar-nav ms-auto'],
+            'items' => [
+                ['label' => 'Home', 'url' => ['/site/index']],
+                ['label' => 'About', 'url' => ['/site/about']],
+                ['label' => 'Contact', 'url' => ['/site/contact']],
+                !Yii::$app->user->isGuest ? ['label' => 'Dashboard', 'url' => ['/dashboard/index']] : '',
+                Yii::$app->user->isGuest ? (
+                    ['label' => 'Login', 'url' => ['/site/login']]
+                ) : (
+                    '<li>'
+                    . Html::beginForm(['/site/logout'], 'post', ['class' => 'd-flex'])
                     . Html::submitButton(
                         'Logout (' . Yii::$app->user->identity->username . ')',
-                        ['class' => 'nav-link btn btn-link logout']
+                        ['class' => 'btn btn-link nav-link']
                     )
                     . Html::endForm()
                     . '</li>'
-        ]
-    ]);
+                )
+            ],
+        ]);
     NavBar::end();
     ?>
 </header>
+
+    <?php if (!Yii::$app->user->isGuest): ?>
+        <li>
+            <?= Html::a('Dashboard', Url::to(['/dashboard/index']), ['class' => 'nav-link']) ?>
+        </li>
+    <?php endif; ?>
 
 <main id="main" class="flex-shrink-0" role="main">
     <div class="container">
@@ -81,3 +91,5 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 </body>
 </html>
 <?php $this->endPage() ?>
+
+
