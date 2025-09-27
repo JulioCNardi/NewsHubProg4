@@ -1,5 +1,5 @@
 main > .container {
-    padding: 70px 15px 20px;
+    padding: 20px 15px 20px;
 }
 
 .footer {
@@ -85,4 +85,131 @@ a.desc:after {
 
 .form-group {
     margin-bottom: 1rem;
+}
+
+/* Estilos para links de notícias - remover sublinhado e aplicar texto normal */
+.card-title a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.card-title a:hover {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.card-title a:visited {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.card-title a:focus {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+/* Banner News Hub */
+.news-hub-banner {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    padding: 40px 0;
+    margin-top: 56px; /* Espaço para a navbar fixa */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-hub-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.speech-bubble {
+    width: 60px;
+    height: 60px;
+    background: #e74c3c;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.speech-bubble::before {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #e74c3c;
+}
+
+.article-icon {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+.article-image {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 2px;
+}
+
+.article-lines {
+    position: absolute;
+    top: 4px;
+    left: 20px;
+    width: 16px;
+}
+
+.line {
+    height: 2px;
+    background: #fff;
+    margin-bottom: 3px;
+    border-radius: 1px;
+}
+
+.line-1 { width: 16px; }
+.line-2 { width: 12px; }
+.line-3 { width: 8px; }
+
+.news-hub-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
+}
+
+.news-hub-subtitle {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    margin: 10px 0 0 0;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .news-hub-title {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .news-hub-subtitle {
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .news-hub-icon {
+        margin-bottom: 20px;
+    }
 }

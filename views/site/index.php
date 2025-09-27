@@ -17,42 +17,22 @@ $this->title = 'Últimas Notícias';
     <?= Html::beginForm(['news/search'], 'get', ['class' => 'mb-4']) ?>
         <div class="input-group">
             <input type="text" name="q" class="form-control" placeholder="Pesquisar notícias..." value="<?= Html::encode($query) ?>">
-            <button class="btn btn-primary" type="submit">Buscar</button>
+            <button class="btn btn-primary" type="submit">
+                <i class="bi bi-search"></i>
+            </button>
         </div>
     <?= Html::endForm() ?>
 
-    <!-- Filtros -->
-    <div class="row mb-3">
-        <div class="col-md-6">
-            <form method="get" id="country-form" action="<?= Url::to(['site/index']) ?>">
-                <input type="hidden" name="category" value="<?= Html::encode($category) ?>">
-                <label for="country-select">Selecione o país:</label>
-                <select name="country" id="country-select" class="form-select" style="width:auto;display:inline-block;" onchange="document.getElementById('country-form').submit();">
-                    <option value="Brazil" <?= $country === 'Brazil' ? 'selected' : '' ?>>Brasil</option>
-                    <option value="Argentina" <?= $country === 'Argentina' ? 'selected' : '' ?>>Argentina</option>
-                    <option value="United States" <?= $country === 'United States' ? 'selected' : '' ?>>Estados Unidos</option>
-                    <option value="France" <?= $country === 'France' ? 'selected' : '' ?>>França</option>
-                    <option value="Germany" <?= $country === 'Germany' ? 'selected' : '' ?>>Alemanha</option>
-                    <!-- Adicione mais países conforme necessário -->
-                </select>
-            </form>
-        </div>
-        <div class="col-md-6">
-            <form method="get" id="category-form" action="<?= Url::to(['site/index']) ?>">
-                <input type="hidden" name="country" value="<?= Html::encode($country) ?>">
-                <label for="category-select">Selecione a categoria:</label>
-                <select name="category" id="category-select" class="form-select" style="width:auto;display:inline-block;" onchange="document.getElementById('category-form').submit();">
-                    <?php foreach ($categories as $key => $label): ?>
-                        <option value="<?= Html::encode($key) ?>" <?= $category === $key ? 'selected' : '' ?>><?= Html::encode($label) ?></option>
-                    <?php endforeach; ?>
-                </select>
-            </form>
-        </div>
-    </div>
 
     <!-- Últimas notícias -->
-    <?php if (empty($news)): ?>
-        <p>Nenhuma notícia encontrada.</p>
+    <?php if (isset($news['error'])): ?>
+        <div class="alert alert-warning" role="alert">
+            <strong>Atenção:</strong> <?= Html::encode($news['error']) ?>
+        </div>
+    <?php elseif (empty($news)): ?>
+        <div class="alert alert-info" role="alert">
+            <strong>Informação:</strong> Nenhuma notícia encontrada para a categoria selecionada. Tente selecionar uma categoria diferente ou verifique sua conexão com a internet.
+        </div>
     <?php else: ?>
         <div class="row">
             <?php foreach ($news as $item): ?>

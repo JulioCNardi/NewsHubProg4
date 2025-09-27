@@ -69,16 +69,20 @@ class NewsService
     {
         $apiKey = trim(getenv('API_KEY')); // garante que não tenha espaços
         $pageSize = 12;
-        $query = urlencode($country);
-
-        $url = "https://content.guardianapis.com/search?q={$query}"
-             . "&page={$page}&page-size={$pageSize}"
+        
+        // Construir URL base
+        $url = "https://content.guardianapis.com/search?"
+             . "page={$page}&page-size={$pageSize}"
              . "&api-key=" . urlencode($apiKey)
              . "&show-fields=thumbnail,headline,trailText,short-url";
 
         // Adicionar filtro de categoria se especificado
         if ($category && $category !== 'all') {
             $url .= "&section=" . urlencode($category);
+        } else {
+            // Se não há categoria específica, buscar por país
+            $query = urlencode($country);
+            $url .= "&q={$query}";
         }
 
         $response = @file_get_contents($url);
@@ -87,6 +91,11 @@ class NewsService
         }
 
         $data = json_decode($response, true);
+
+        // Verificar se há erro na resposta da API
+        if (isset($data['response']['status']) && $data['response']['status'] !== 'ok') {
+            return ['error' => 'Erro na API: ' . ($data['response']['message'] ?? 'Erro desconhecido')];
+        }
 
         $articles = [];
         if (isset($data['response']['results'])) {
@@ -126,7 +135,7 @@ class NewsService
             'lifestyle' => 'Estilo de vida',
             'opinion' => 'Opinião',
             'environment' => 'Meio ambiente',
-            'health' => 'Saúde',
+            'society' => 'Sociedade',
             'education' => 'Educação',
             'travel' => 'Viagem',
             'food' => 'Culinária',
