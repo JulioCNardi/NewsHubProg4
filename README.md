@@ -2,7 +2,7 @@
 
 ## Links:
 
-- Projeto-deploy: https://cheerful-reverence-dev.up.railway.app/index.php?r=site%2Findex
+- Projeto-deploy: https://cheerful-reverence-dev.up.railway.app/
 - Link video do youtube: https://www.youtube.com/watch?v=8Z1zGD1yWGQ
 
 
